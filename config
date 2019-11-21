@@ -1,0 +1,47 @@
+STEPS=(
+#    cn_mirror
+#    update_system
+#    set_local_time
+#    essentials
+#    laptop_gpu_switch
+#    emoji
+#    shadowsocks
+#    electron_ssr
+#    proxychains
+#    sogoupinyin
+#    telegram
+#    dropbox
+#    nutstore
+#    typora
+#    oh_my_zsh
+#    oh_my_zsh_extensions
+#    chrome
+#    netease_cloud_music
+#    mailspring
+#    tim
+#    wechat
+#    thunder_speed
+#    wps_office
+#    redshift
+#    deepin_screenshot
+#    awesome_vimrc
+#    git_config
+#    docker
+#    jre
+#    jdk8
+#    list_java_env
+#    go
+#    goproxy_cn
+#    mariadb
+#    mariadb_config
+#    redis
+#    vscode
+#    jetbrains_toolbox
+#    postman
+#    latte_dock
+#    global_menu
+#    adapta_theme
+)
+
+GIT_USERNAME="your_git_username"
+GIT_USEREMAIL="your_git_user_email"
