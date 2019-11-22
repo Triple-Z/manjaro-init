@@ -8,6 +8,7 @@ STEPS=(
 #    shadowsocks
 #    electron_ssr
 #    proxychains
+#    privoxy
 #    sogoupinyin
 #    telegram
 #    dropbox

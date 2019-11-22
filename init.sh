@@ -10,7 +10,8 @@ function help() {
 }
 
 function cn_mirror() {
-    sudo pacman-mirrors -i -c China -m rank
+    # TODO using fixed mirror
+    sudo pacman-mirrors -c China -m rank
     sudo echo "[archlinuxcn]
 SigLevel= TrustedOnly
 Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
@@ -51,6 +52,17 @@ function electron_ssr() {
 
 function proxychains() {
     sudo pacman -S proxychains-ng --noconfirm
+
+    sudo echo "socks5 127.0.0.1 1080" >> /etc/proxychains.conf
+}
+
+function privoxy() {
+    sudo pacman -S privoxy --noconfirm
+
+    sudo echo "forward-socks5 / 127.0.0.1:1080 ." >> /etc/privoxy/config
+
+    sudo systemctl restart privoxy
+    sudo systemctl enable privoxy
 }
 
 function sogoupinyin() {
