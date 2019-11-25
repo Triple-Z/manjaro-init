@@ -10,7 +10,7 @@ function help() {
 }
 
 function cn_mirror() {
-    # TODO using fixed mirror
+    # using fixed mirror
     sudo pacman-mirrors -c China -m rank
     sudo echo "[archlinuxcn]
 SigLevel= TrustedOnly
@@ -65,8 +65,11 @@ function privoxy() {
     sudo systemctl enable privoxy
 }
 
-function sogoupinyin() {
-    sudo pacman -S fcitx fcitx-qt4 fcitx-im  fcitx-configtool fcitx-sogoupinyin --noconfirm
+function input_method() {
+    # install RIME and Sogou Pinyin
+    # Sogou Pinyin is so unstable that I recommand to use RIME.
+
+    sudo pacman -S fcitx fcitx-qt4 fcitx-im fcitx-configtool fcitx-sogoupinyin fcitx-rime --noconfirm
 
     echo "export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
@@ -109,10 +112,11 @@ function oh_my_zsh_extensions() {
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
 
     # vim ~/.zshrc
-    # TODO: edit plugins & save
-    # plugins=(git zsh-syntax-highlighting docker docker-compose zsh-autosuggestions zsh-completions)
+    # edit plugins & save
+    # plugins=(git zsh-syntax-highlighting docker docker-compose zsh-autosuggestions zsh-completions)    
+    sed -i '/^plugins/c\plugins=(git zsh-syntax-highlighting docker docker-compose zsh-autosuggestions zsh-completions)' ~/.zshrc
 
-    # autoload -U compinit && compinit
+    autoload -U compinit && compinit
 }
 
 function chrome() {
