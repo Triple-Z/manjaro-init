@@ -9,7 +9,7 @@ STEPS=(
 #    electron_ssr
 #    proxychains
 #    privoxy
-#    sogoupinyin
+#    input_method
 #    telegram
 #    dropbox
 #    nutstore
@@ -27,6 +27,7 @@ STEPS=(
 #    deepin_screenshot
 #    awesome_vimrc
 #    git_config
+#    meld
 #    docker
 #    jre
 #    jdk8
@@ -37,6 +38,7 @@ STEPS=(
 #    mariadb_config
 #    redis
 #    vscode
+#    sublime_text
 #    jetbrains_toolbox
 #    postman
 #    latte_dock

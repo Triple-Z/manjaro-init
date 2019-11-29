@@ -69,7 +69,7 @@ function input_method() {
     # install RIME and Sogou Pinyin
     # Sogou Pinyin is so unstable that I recommand to use RIME.
 
-    sudo pacman -S fcitx fcitx-qt4 fcitx-im fcitx-configtool fcitx-sogoupinyin fcitx-rime --noconfirm
+    sudo pacman -S fcitx fcitx-qt4 fcitx-im fcitx-configtool fcitx-sogoupinyin fcitx-rime fcitx-cloudpinyin fcitx-googlepinyin --noconfirm
 
     echo "export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
@@ -132,6 +132,10 @@ function mailspring() {
     sudo pacman -S libsecret --noconfirm
 }
 
+function deepin_wine() {
+    sudo pacman -S deepin-wine --noconfirm
+}
+
 function tim() {
     yay -S deepin-wine-tim --noconfirm
 
@@ -180,6 +184,17 @@ function git_config() {
     git config --global core.editor vim
 
     # TODO: Create & set GPG keys
+}
+
+function meld() {
+    # Meld is a visual diff and merge tool targeted at developers.
+    sudo pacman -S meld --noconfirm
+
+    # set meld as the default GUI diff tool
+    git config --global diff.guitool meld
+
+    # set meld as git defualt merge tool
+    git config --global merge.tool meld
 }
 
 function docker() {
@@ -250,6 +265,10 @@ function redis() {
 
 function vscode() {
     sudo pacman -S visual-studio-code-bin --noconfirm
+}
+
+function sublime_text() {
+    yay -S sublime-text-dev --noconfirm
 }
 
 function jetbrains_toolbox() {
