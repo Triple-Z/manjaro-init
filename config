@@ -19,6 +19,7 @@ STEPS=(
 #    chrome
 #    netease_cloud_music
 #    mailspring
+#    deepin-wine
 #    tim
 #    wechat
 #    thunder_speed
@@ -44,6 +45,7 @@ STEPS=(
 #    latte_dock
 #    global_menu
 #    adapta_theme
+#    draw_io
 )
 
 GIT_USERNAME="your_git_username"

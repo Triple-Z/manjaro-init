@@ -1,4 +1,8 @@
 #!/bin/bash
+# Author:               TripleZ <me@triplez.cn>
+# Maintainer:           TripleZ <me@triplez.cn>
+# Last Updated:         2020-02-06
+#
 # This shell script is for Manjaro quick initialization.
 
 function help() {
@@ -134,10 +138,18 @@ function mailspring() {
 
 function deepin_wine() {
     sudo pacman -S deepin-wine --noconfirm
+
+    # 修复字体发虚
+    yay -S lib32-freetype2-infinality-ultimate --noconfirm
+
+    sudo pacman -Sy gnome-settings-daemon --noconfirm
+    cp /etc/xdg/autostart/org.gnome.SettingsDaemon.XSettings.desktop ~/.config/autostart
 }
 
 function tim() {
     yay -S deepin-wine-tim --noconfirm
+
+    # TODO: Change wine container to deepin-wine
 
     # Set DPI configuration:
     # - Set DPI as 120 in "Graphics" tab.
@@ -147,12 +159,17 @@ function tim() {
 function wechat() {
     yay -S deepin-wine-wechat --noconfirm
 
+    # TODO: Change wine container to deepin-wine
+
     # Set DPI configuration:
     # - Set DPI as 120 in "Graphics" tab.
-    env WINEPREFIX="$HOME/.deepinwine/Deepin-WeChat" winecfg
+    # TODO: it won't work!
+    # env WINEPREFIX="$HOME/.deepinwine/Deepin-WeChat" winecfg
 }
 
 function thunder_speed() {
+    # TODO: Change wine container to deepin-wine
+
     yay -S deepin-wine-thunderspeed --noconfirm
 }
 
@@ -289,6 +306,10 @@ function global_menu() {
 
 function adapta_theme() {
     yay -S adapta-kde kvantum-theme-adapta adapta-gtk-theme --noconfirm
+}
+
+function draw_io() {
+    yay -S drawio-desktop --noconfirm
 }
 
 function main() {
