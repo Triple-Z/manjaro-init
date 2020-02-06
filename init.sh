@@ -216,6 +216,10 @@ function meld() {
 
 function docker() {
     sudo pacman -S docker docker-compose --noconfirm
+
+    # using docker without sudo 
+    sudo groupadd docker
+    sudo usermod -aG docker $USER
 }
 
 function jre() {
