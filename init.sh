@@ -252,6 +252,10 @@ function goproxy_cn() {
     echo "export GOPROXY=https://goproxy.cn" >> ~/.zshrc
 }
 
+function pip_tuna() {
+    pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+}
+
 function mariadb() {
     sudo pacman -S mariadb --noconfirm
     # Install MariaDB

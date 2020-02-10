@@ -35,6 +35,7 @@ STEPS=(
 #    list_java_env
 #    go
 #    goproxy_cn
+#    pip_tuna
 #    mariadb
 #    mariadb_config
 #    redis
