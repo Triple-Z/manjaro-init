@@ -47,6 +47,7 @@ STEPS=(
 #    global_menu
 #    adapta_theme
 #    draw_io
+#    dns_tools
 )
 
 GIT_USERNAME="your_git_username"

@@ -320,6 +320,10 @@ function draw_io() {
     yay -S drawio-desktop --noconfirm
 }
 
+function dns_tools() {
+    sudo pacman -S bind-tools --noconfirm
+}
+
 function main() {
     # load the configuration
     . ./config
