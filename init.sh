@@ -321,6 +321,7 @@ function draw_io() {
 }
 
 function dns_tools() {
+    # more on: https://wiki.archlinux.org/index.php/Domain_name_resolution#Lookup_utilities
     sudo pacman -S bind-tools --noconfirm
 }
 
