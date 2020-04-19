@@ -186,6 +186,12 @@ function redshift() {
     yay -S redshift --noconfirm
 }
 
+# RECOMMAND!! 
+# Deepin screenshot in KDE has some little problems, I strongly recommand you to use Flameshot insted.
+function flameshot() {
+    sudo pacman -S flameshot --noconfirm
+}
+
 function deepin_screenshot() {
     yay -S deepin-screenshot --noconfirm
 }
