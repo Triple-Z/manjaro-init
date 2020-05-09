@@ -36,6 +36,10 @@ function essentials() {
     sudo pacman -S yay git net-tools tree vim htop --noconfirm
 }
 
+function yay_cn_mirror() {
+    yay --aururl "https://aur.tuna.tsinghua.edu.cn" --save
+}
+
 function laptop_gpu_switch() {
     sudo pacman -S virtualgl lib32-virtualgl lib32-primus primus --noconfirm
     sudo systemctl enable bumblebeed
@@ -333,7 +337,7 @@ function dns_tools() {
 
 function main() {
     # load the configuration
-    . ./config
+    . ./config.sh
 
     for STEP in ${STEPS[@]}
     do

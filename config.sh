@@ -3,6 +3,7 @@ STEPS=(
 #    update_system
 #    set_local_time
 #    essentials
+#    yay_cn_mirror
 #    laptop_gpu_switch
 #    emoji
 #    shadowsocks
