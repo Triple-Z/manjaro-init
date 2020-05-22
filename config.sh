@@ -18,6 +18,7 @@ STEPS=(
 #    oh_my_zsh
 #    oh_my_zsh_extensions
 #    chrome
+#    onenote
 #    netease_cloud_music
 #    mailspring
 #    deepin-wine

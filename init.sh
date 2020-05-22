@@ -131,6 +131,10 @@ function chrome() {
     sudo pacman -S google-chrome --noconfirm
 }
 
+function onenote() {
+    yay -S p3x-onenote --noconfirm
+}
+
 function netease_cloud_music() {
     sudo pacman -S netease-cloud-music --noconfirm
 }
