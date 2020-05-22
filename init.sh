@@ -262,6 +262,22 @@ export PATH=$PATH:$GOPATH/bin
 " >> ~/.zshrc
 }
 
+function nodejs() {
+    yay -S nvm --noconfirm
+    echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.zshrc
+    exec $SHELL
+    nvm install 12
+}
+
+function node_taobao_registry() {
+    npm config set registry https://registry.npm.taobao.org
+}
+
+function node_yarn() {
+    npm install -g yarn
+    echo 'export PATH=$PATH:~/.yarn/bin' >> ~/.zshrc
+}
+
 function goproxy_cn() {
     echo "export GOPROXY=https://goproxy.cn" >> ~/.zshrc
 }
