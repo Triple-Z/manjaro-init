@@ -58,6 +58,14 @@ function electron_ssr() {
     yay -S electron-ssr --noconfirm
 }
 
+function v2ray() {
+    sudo pacman -S v2ray --noconfirm
+}
+
+function qv2ray() {
+    sudo pacman -S qv2ray --noconfirm
+}
+
 function proxychains() {
     sudo pacman -S proxychains-ng --noconfirm
 
